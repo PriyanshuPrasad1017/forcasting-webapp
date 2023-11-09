@@ -40,7 +40,7 @@ def build_model(df, model_name):
         model = RandomForestRegressor(n_estimators=parameter_n_estimators,
                                       random_state=parameter_random_state,
                                       max_features=parameter_max_features,
-                                      criterion=parameter_criterion,
+                                      # criterion=parameter_criterion,
                                       min_samples_split=parameter_min_samples_split,
                                       min_samples_leaf=parameter_min_samples_leaf,
                                       bootstrap=parameter_bootstrap,
