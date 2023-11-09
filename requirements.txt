@@ -10,7 +10,7 @@
 streamlit
 pandas
 numpy
-scikit-learn
+scikit-learn==0.23.2
 ydata-profiling
 plotly_express
 streamlit-pandas-profiling
