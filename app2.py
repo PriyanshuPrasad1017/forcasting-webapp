@@ -119,7 +119,7 @@ if (model_name == 'RF'):
         parameter_random_state = st.sidebar.slider(
             'Seed number (random_state)', 0, 1000, 42, 1)
         parameter_criterion = st.sidebar.select_slider(
-            'Performance measure (criterion)', options=['mse', 'mae'])
+            'Performance measure (criterion)', options=['squared_error', 'absolute_error'])
         parameter_bootstrap = st.sidebar.select_slider(
             'Bootstrap samples when building trees (bootstrap)', options=[True, False])
         parameter_oob_score = st.sidebar.select_slider(
