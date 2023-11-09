@@ -4,6 +4,6 @@ base58==2.0.1
 numpy==1.19.2
 scikit-learn==0.23.2
 plotly_express==0.4.0
-ydata-profiling==2.10.0
+ydata-profiling==4.5.0
 streamlit-pandas-profiling==0.1.1
 Jinja2==3.0.3
