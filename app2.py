@@ -40,7 +40,7 @@ def build_model(df, model_name):
         model = RandomForestRegressor(n_estimators=parameter_n_estimators,
                                       random_state=parameter_random_state,
                                       max_features=parameter_max_features,
-                                      # criterion=parameter_criterion,
+                                      criterion=parameter_criterion,
                                       min_samples_split=parameter_min_samples_split,
                                       min_samples_leaf=parameter_min_samples_leaf,
                                       bootstrap=parameter_bootstrap,
@@ -109,7 +109,7 @@ if (model_name == 'RF'):
         parameter_n_estimators = st.sidebar.slider(
             'Number of estimators (n_estimators)', 0, 1000, 100, 100)
         parameter_max_features = st.sidebar.select_slider(
-            'Max features (max_features)', options=['auto', 'sqrt', 'log2'])
+            'Max features (max_features)', options=['sqrt', 'log2'])
         parameter_min_samples_split = st.sidebar.slider(
             'Minimum number of samples required to split an internal node (min_samples_split)', 1, 10, 2, 1)
         parameter_min_samples_leaf = st.sidebar.slider(
